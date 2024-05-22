@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of differnt obj</title>
+</head>
+
+<body>
+    <h1 id="allusers"></h1>
+    <script>
+        const users = [
+            {
+                name: 'danial',
+                userType: 'super admin',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'Ali marwat',
+                userType: 'super admin',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'muhammad',
+                userType: 'front-end develper',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'tareen',
+                userType: 'testing manager',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            }
+
+        ];
+
+        users.map((item) => item);
+        console.log('alluser ....',);
+
+        // const item = users.map((members) => members.email); // to return only members emails 
+
+        // document.getElementById("allusers").innerHTML = item;   for to return all members data name,email,co:no etc
+
+
+
+        // document.getElementById("allusers").innerHTML = item[0];     //for to return item data on 0 location of arry
+        // console.log(item[0]);
+
+
+        console.log(users);
+
+
+
+        // if we want to console a single item of the object in array, then we use to, item.name or item.email or item.contact after arrow
+
+
+
+
+
+        //////////////////////////////////////// old mathod
+        // users.map((function (item) {
+        //     console.log(item);
+        // }));
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
