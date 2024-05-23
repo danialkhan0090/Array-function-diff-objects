@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arry push function</title>
+</head>
+
+<body>
+    <button onclick="showFUllname()">Click here to show names</button>
+    <script>
+
+        const users = [
+            {
+                name: 'danial',
+                userType: 'super admin',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'Ali marwat',
+                userType: 'super admin',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'muhammad',
+                userType: 'front-end develper',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            },
+            {
+                name: 'tareen',
+                userType: 'testing manager',
+                email: 'danialkhan0090@gmail.com',
+                contact: "031********"
+            }
+
+        ];
+
+
+
+
+
+        let showNames = [];
+        //showFullname is a funcrion decleard with a button on html body;
+        function showFUllname() {
+            users.forEach((singleItem) => showNames.push(singleItem.email)) //we can push name , contact aswell to the blank arry instead of email; 
+        };
+        console.log(showNames); // showNames is an array that was empty decleard [] but now we pushed users email...
+
+
+    </script>
+
+</body>
+
+</html>
