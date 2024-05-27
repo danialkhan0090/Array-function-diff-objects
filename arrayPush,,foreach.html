@@ -39,16 +39,18 @@
 
         ];
 
-
-
-
-
-        let showNames = [];
-        //showFullname is a funcrion decleard with a button on html body;
+        let personFullName = [];
         function showFUllname() {
-            users.forEach((singleItem) => showNames.push(singleItem.email)) //we can push name , contact aswell to the blank arry instead of email; 
+            users.forEach((singleItem) => personFullName.push(singleItem.email))
         };
-        console.log(showNames); // showNames is an array that was empty decleard [] but now we pushed users email...
+
+
+
+        // //showFullname is a button function...see
+        // function showFUllname() {
+        // users.forEach((singleItem) => showNames.push(singleItem.email)) //we can push name , contact aswell to the blank arry instead of email; 
+        // };
+        console.log(personFullName); // showNames is an array that was empty decleard [] but now we pushed users email...
 
 
     </script>
