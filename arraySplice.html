@@ -21,8 +21,8 @@
         const newCar = {
             name: "ford Raptor", color: "black", model: 2024
         };
-        carsArray.push(newCar);
-        console.log("all cars are", carsArray);
+        carsArray.splice(3, 0, newCar);
+        console.log(carsArray);
 
     </script>
 </body>
