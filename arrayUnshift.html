@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Unshift() Mathod</title>
+</head>
+
+<body>
+    <script>
+        const carsArray = [
+            { name: "BMW", color: "Black", model: 2023 },
+            { name: "AUDI", color: "white", model: 2020 },
+            { name: "CIVIC", color: "red", model: 2024 },
+            { name: "AQUA", color: "white", model: 2022 },
+            { name: "TESLA", color: "Black", model: 2021 }
+        ];
+
+        const newCar = { name: "NISAN", color: "purple", model: 2025 };
+        carsArray.unshift(newCar);
+
+        console.log("all cars are", carsArray);
+
+    </script>
+</body>
+
+</html>
