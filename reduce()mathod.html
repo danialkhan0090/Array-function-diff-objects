@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce mathod </title>
+</head>
+
+<body>
+
+    <h2 id="myshoping"></h2>
+    <script>
+        const everyItems = [
+            { name: "shoes", color: "Black", price: 3000 },
+            { name: "mobile", color: "golden", price: 3000 },
+            { name: "car", color: "brown", price: 5600000 },
+            { name: "watch", color: "white", price: 55000 },
+            { name: "bike", color: "red", price: 400000 },
+        ];
+        let payment = everyItems.reduce((acc, item) => acc + item.price, 0)
+
+        document.getElementById("myshoping").innerHTML = "here is total price", payment
+        // console.log('grand total', payment);
+
+    </script>
+</body>
+
+</html>
