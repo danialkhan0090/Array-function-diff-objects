@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combine operators map_reduce_filter__</title>
+</head>
+
+<body>
+    <script>
+        const team = [
+            { id: 1, name: "amjad", points: 8, programmer: true },
+            { id: 2, name: "ali", points: 10, programmer: true },
+            { id: 3, name: "shafiq", points: 8, programmer: false },
+            { id: 1, name: "malik", points: 8, programmer: false }
+
+        ];
+        let bestPlayers = team?.filter((item) => item.programmer);
+        console.log("programmers are  ", bestPlayers);
+        let mybestPlyers = bestPlayers.map((item) => item.points);
+        console.log("my best plyers points are  ", mybestPlyers);
+        let totalPoints = mybestPlyers.reduce((total, item) => total + item);
+        console.log("total points of my best plyers are  ", totalPoints)
+    </script>
+</body>
+
+</html>

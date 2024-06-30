@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array destructuring mathod</title>
+</head>
+
+<body>
+    <script>
+        ///////// ES5 OLD VERSION MATHOD
+
+
+        // let myArray = ['python', 'js', 'c#', 'java', 'php'];
+        // console.log('my favorite programming language is  ', myArray[0]);
+
+
+        /////////////// ES6 NEW VERSION
+        // const myArray = ['danial', 'raza', 'asim', 'shafiq', 'waheed', 'kamal'];
+        // const [firstPer, second, third, fourth, fifth, sixth] = myArray
+        // console.log(`our project team members are ${firstPer} ${second} ${third} ${fourth}`);
+
+        /////////// use of rest operator in destructuring array mathod
+
+        // let myArray = ['python', 'js', 'c#', 'java', 'php'];
+        // const [language1, ...otherLanguages] = myArray
+        // console.log(`my first priority language is ${language1} and then ${otherLanguages}`);
+
+
+
+        /////////// use of skiping mathod as of destructuring array
+        let myArray = ['python', 'js', 'c#', 'java', 'php'];
+        const [, , , , language] = myArray;
+        console.log(`we use skiping mathod by using comma : ${language}`);
+
+
+
+    </script>
+</body>
+
+</html>

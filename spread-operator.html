@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+
+<body>
+    <script>
+        ////////mathod one of array litteral of spread operatoor
+        let sum = (a, b, c) => a + b + c;
+        let thisArray = [3, 5];
+        console.log(sum(...thisArray, 3));
+
+
+        ////////mathod two of array .......................
+
+        // let sum = (a, b, c) => a + b + c;
+        // let thisArray = [3, 5];
+        // let total = sum(...thisArray, 3)
+        // console.log(total);
+
+
+        /////////////////////////// object litteral operator
+
+
+        let cat = { legs: 4 }
+        let dog = { ...cat, sound: "woouw woouw" };
+        console.log(dog);
+
+        let shafy = { age: 4 };
+        const khansa = { ...shafy };
+        khansa.age = 2;
+        console.log(shafy.age);
+        console.log(khansa.age)
+    </script>
+</body>
+
+</html>
