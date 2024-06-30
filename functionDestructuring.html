@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function destructuring</title>
+</head>
+
+<body>
+    <script>
+        const student = { name: 'danial', age: 23, country: "pakistan", scores: { html: 28, css: 19, php: 20 } };
+
+        const showfunction = ({ name, age, country: place, scores: { html, css, php } }) => {
+            console.log(`my name is ${name},and i'm${age} and im resident of ${place} and my top scores in programming languages are ${html} in html , ${css} in css ,and ${php} in php`);
+        }
+
+
+        showfunction(student);
+
+    </script>
+</body>
+
+</html>

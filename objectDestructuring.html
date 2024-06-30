@@ -9,11 +9,27 @@
 
 <body>
     <script>
-        const student = {
-            name: 'shafiq', age: 23, country: 'pakistan'
+        // const student = {
+        //     name: 'shafiq', age: 23, country: 'pakistan'
+        // };
+        // const { name, age, country } = student
+        // console.log(`my mentor name is ${name} and he is ${age} and belongs ${country}`);
+
+        // //////// nested object practice
+
+        // const newStudent = {
+        //     name: 'danial', age: 23, country: 'pakistan', score: { html: 20, css: 13, php: 19 }
+        // };
+        // const { name, age, country, score: { html, css, php } } = newStudent;
+        // console.log(`my name is ${name} im ${age} and belonging to ${country} and my languges scores are ${html}in html ${css}in css ${php} in php `)
+
+        ////// also we can change variable names as name:me age:years etc as
+
+        const newStudent = {
+            name: 'danial', age: 23, country: 'pakistan', score: { html: 20, css: 13, php: 19 }
         };
-        const { name, age, country } = student
-        console.log(`my mentor name is ${name} and he is ${age} and belongs  ${country}`);
+        const { name: me, age: years, country: place, score: { html: favorite, css: secondFavorite, php: thirdFavorite } } = newStudent;
+        console.log(`my name is ${me} im ${years} and belonging to ${place} and my languges scores are ${favorite}in html ${secondFavorite}in css ${thirdFavorite} in php `)
     </script>
 </body>
 
